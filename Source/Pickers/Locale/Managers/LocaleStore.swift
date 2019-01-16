@@ -1,6 +1,6 @@
 import Foundation
 
-struct LocaleStore {
+public struct LocaleStore {
     
     /// Result Enum
     ///
