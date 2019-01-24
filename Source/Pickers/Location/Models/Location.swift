@@ -1,6 +1,5 @@
 import Foundation
 import CoreLocation
-import Contacts
 
 // class because protocol
 public class Location: NSObject {
@@ -12,13 +11,7 @@ public class Location: NSObject {
 	public let placemark: CLPlacemark
 	
 	public var address: String {
-        if let postalAddress = placemark.postalAddressIfAvailable {
-            let formatter = CNPostalAddressFormatter()
-            formatter.style = .mailingAddress
-            return formatter.string(from: postalAddress)
-        } else {
-            return "\(coordinate.latitude), \(coordinate.longitude)"
-        }
+        return "\(coordinate.latitude), \(coordinate.longitude)"
 	}
 	
 	public init(name: String?, location: CLLocation? = nil, placemark: CLPlacemark) {

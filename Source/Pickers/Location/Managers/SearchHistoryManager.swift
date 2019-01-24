@@ -1,6 +1,5 @@
 import UIKit
 import MapKit
-import Contacts
 
 struct SearchHistoryManager {
     
@@ -54,16 +53,11 @@ extension Location {
     
     func toDefaultsDic() -> NSDictionary? {
         
-        guard let postalAddress = placemark.postalAddressIfAvailable,
-            let placemarkCoordinatesDic = placemark.location?.coordinate.toDefaultsDic()
+        guard let placemarkCoordinatesDic = placemark.location?.coordinate.toDefaultsDic()
             else { return nil }
-        
-        let formatter = CNPostalAddressFormatter()
-        let addressDic = formatter.string(from: postalAddress)
-        
+
         var dic: [String: AnyObject] = [
             LocationDicKeys.locationCoordinates: location.coordinate.toDefaultsDic(),
-            LocationDicKeys.placemarkAddressDic: addressDic as AnyObject,
             LocationDicKeys.placemarkCoordinates: placemarkCoordinatesDic
         ]
         if let name = name { dic[LocationDicKeys.name] = name as AnyObject? }
