@@ -21,7 +21,6 @@ class ViewController: UIViewController {
         case photoLibraryPicker = "Photo Library Picker"
         case colorPicker = "Color Picker"
         case textViewer = "Text Viewer"
-        case locationPicker = "Location Picker"
         
         var description: String {
             switch self {
@@ -38,7 +37,6 @@ class ViewController: UIViewController {
             case .photoLibraryPicker: return "Select photos from Photo Library"
             case .colorPicker: return "Storyboard & Autolayout"
             case .textViewer: return "TextView, not editable"
-            case .locationPicker: return "MapView With SearchController"
             }
         }
         
@@ -48,7 +46,7 @@ class ViewController: UIViewController {
                 return UIColor(hex: 0x007AFF)
             case .oneTextField, .twoTextFields:
                 return UIColor(hex: 0x5AC8FA)
-            case .dataPicker, .pickerView, .locationPicker:
+            case .dataPicker, .pickerView:
                 return UIColor(hex: 0x4CD964)
             case .countryPicker, .phoneCodePicker, .currencyPicker, .textViewer:
                 return UIColor(hex: 0xFF5722)
@@ -73,8 +71,7 @@ class ViewController: UIViewController {
         .imagePicker,
         .photoLibraryPicker,
         .colorPicker,
-        .textViewer,
-        .locationPicker
+        .textViewer
     ]
     
     // MARK: UI Metrics
@@ -365,12 +362,6 @@ class ViewController: UIViewController {
                 .normal("*You can return software, provided that it has not been installed on any computer. Software that contains a printed software license may not be returned if the seal or sticker on the software media packaging is broken.")]
             alert.addTextViewer(text: .attributedText(text))
             alert.addAction(title: "OK", style: .cancel)
-            alert.show()
-            
-        case .locationPicker:
-            let alert = UIAlertController(style: self.alertStyle)
-            alert.addLocationPicker { location in Log(location) }
-            alert.addAction(title: "Cancel", style: .cancel)
             alert.show()
         }
     }

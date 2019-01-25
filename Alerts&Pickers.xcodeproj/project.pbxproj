@@ -83,11 +83,6 @@
 		FA3BB2C72008B46900E06F8F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3BB2AB2008B46800E06F8F /* AppDelegate.swift */; };
 		FA3BB2CD2008B98F00E06F8F /* Assets in Resources */ = {isa = PBXBuildFile; fileRef = FA3BB2CC2008B98F00E06F8F /* Assets */; };
 		FA3BB2CF2008B9FA00E06F8F /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = FA3BB2CE2008B9FA00E06F8F /* LICENSE */; };
-		FA4B036A201A119C00D282E2 /* SearchHistoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B0366201A119C00D282E2 /* SearchHistoryManager.swift */; };
-		FA4B036B201A119C00D282E2 /* LocationPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B0367201A119C00D282E2 /* LocationPickerViewController.swift */; };
-		FA4B036C201A119C00D282E2 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B0368201A119C00D282E2 /* Location.swift */; };
-		FA4B036D201A119C00D282E2 /* LocationSearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B0369201A119C00D282E2 /* LocationSearchResultsViewController.swift */; };
-		FA4B036F201A652900D282E2 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B036E201A652900D282E2 /* Address.swift */; };
 		FA4B037B201A85FE00D282E2 /* PhotoLibraryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B037A201A85FE00D282E2 /* PhotoLibraryPickerViewController.swift */; };
 		FA6E98C42017348800008C0C /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E98C32017348800008C0C /* Button.swift */; };
 		FA6E98C72017ABE500008C0C /* VegaScrollFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6E98C62017ABE500008C0C /* VegaScrollFlowLayout.swift */; };
@@ -187,11 +182,6 @@
 		FA3BB2AB2008B46800E06F8F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA3BB2CC2008B98F00E06F8F /* Assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Assets; sourceTree = "<group>"; };
 		FA3BB2CE2008B9FA00E06F8F /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		FA4B0366201A119C00D282E2 /* SearchHistoryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHistoryManager.swift; sourceTree = "<group>"; };
-		FA4B0367201A119C00D282E2 /* LocationPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationPickerViewController.swift; sourceTree = "<group>"; };
-		FA4B0368201A119C00D282E2 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		FA4B0369201A119C00D282E2 /* LocationSearchResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchResultsViewController.swift; sourceTree = "<group>"; };
-		FA4B036E201A652900D282E2 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		FA4B037A201A85FE00D282E2 /* PhotoLibraryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPickerViewController.swift; sourceTree = "<group>"; };
 		FA6E98C32017348800008C0C /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		FA6E98C62017ABE500008C0C /* VegaScrollFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VegaScrollFlowLayout.swift; sourceTree = "<group>"; };
@@ -388,7 +378,6 @@
 				FAAB5C95201BCC8D00CCE04D /* Date */,
 				FAAB5C96201BCCA400CCE04D /* Image */,
 				FAAB5C81201BC14900CCE04D /* Locale */,
-				FA4B0365201A118500D282E2 /* Location */,
 				FA4B0371201A810700D282E2 /* PhotoLibrary */,
 				FAAB5C92201BCC4800CCE04D /* PickerView */,
 				FAAB5C8F201BCBA100CCE04D /* TextFields */,
@@ -418,17 +407,6 @@
 				FA3BB28F2008B46500E06F8F /* Views */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		FA4B0365201A118500D282E2 /* Location */ = {
-			isa = PBXGroup;
-			children = (
-				FA4B0367201A119C00D282E2 /* LocationPickerViewController.swift */,
-				FA4B0369201A119C00D282E2 /* LocationSearchResultsViewController.swift */,
-				FAAB5C91201BCC0D00CCE04D /* Managers */,
-				FAAB5C90201BCC0400CCE04D /* Models */,
-			);
-			path = Location;
 			sourceTree = "<group>";
 		};
 		FA4B0371201A810700D282E2 /* PhotoLibrary */ = {
@@ -511,23 +489,6 @@
 				FA3BB2A82008B46800E06F8F /* OneTextFieldViewController.swift */,
 			);
 			path = TextFields;
-			sourceTree = "<group>";
-		};
-		FAAB5C90201BCC0400CCE04D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				FA4B0368201A119C00D282E2 /* Location.swift */,
-				FA4B036E201A652900D282E2 /* Address.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		FAAB5C91201BCC0D00CCE04D /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				FA4B0366201A119C00D282E2 /* SearchHistoryManager.swift */,
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 		FAAB5C92201BCC4800CCE04D /* PickerView */ = {
@@ -835,7 +796,6 @@
 				F27C7E5121771E5300266414 /* ItemBaseController.swift in Sources */,
 				F27C7E4C21771E5300266414 /* UISlider.swift in Sources */,
 				F27C7E3921771E5300266414 /* VideoView.swift in Sources */,
-				FA4B036B201A119C00D282E2 /* LocationPickerViewController.swift in Sources */,
 				F27C7E4F21771E5300266414 /* GalleryItem.swift in Sources */,
 				F27C7E5221771E5300266414 /* LayoutEnums.swift in Sources */,
 				F27C7E4A21771E5300266414 /* UIApplication.swift in Sources */,
@@ -868,7 +828,6 @@
 				FA3BB2C42008B46900E06F8F /* TwoTextFieldsViewController.swift in Sources */,
 				FA3BB2B02008B46800E06F8F /* SegmentedControl.swift in Sources */,
 				F27C7E5021771E5300266414 /* GalleryDisplacedViewsDataSource.swift in Sources */,
-				FA4B036A201A119C00D282E2 /* SearchHistoryManager.swift in Sources */,
 				FA3BB2B32008B46800E06F8F /* UISegmentedControl+Extensions.swift in Sources */,
 				F27C7E3221771E5300266414 /* GalleryConfiguration.swift in Sources */,
 				FAAB5C8E201BCB2500CCE04D /* PhoneCodeCell.swift in Sources */,
@@ -888,7 +847,6 @@
 				F27C7E5721771E5300266414 /* ImageFadeInHandler.swift in Sources */,
 				FA3BB2B52008B46800E06F8F /* Date+Extension.swift in Sources */,
 				FA3BB2C02008B46900E06F8F /* DatePickerViewController.swift in Sources */,
-				FA4B036C201A119C00D282E2 /* Location.swift in Sources */,
 				FA3BB2AF2008B46800E06F8F /* Label.swift in Sources */,
 				FA005E9620162BB5001EA8C6 /* Assets.swift in Sources */,
 				FA3BB2BA2008B46900E06F8F /* UIAlertController+Extensions.swift in Sources */,
@@ -899,7 +857,6 @@
 				F27C7E4721771E5300266414 /* AVPlayer.swift in Sources */,
 				F27C7E4021771E5300266414 /* UIColor.swift in Sources */,
 				F27C7E3721771E5300266414 /* VideoScrubber.swift in Sources */,
-				FA4B036D201A119C00D282E2 /* LocationSearchResultsViewController.swift in Sources */,
 				FAAB5CA6201DEE9C00CCE04D /* UIViewController+Extensions.swift in Sources */,
 				F27C7E4B21771E5300266414 /* UIScreen.swift in Sources */,
 				F27C7E4821771E5300266414 /* Bool.swift in Sources */,
@@ -907,7 +864,6 @@
 				F27C7E4621771E5300266414 /* UIImageView.swift in Sources */,
 				F27C7E3A21771E5300266414 /* ThumbnailsViewController.swift in Sources */,
 				F27C7E4921771E5300266414 /* CGRect.swift in Sources */,
-				FA4B036F201A652900D282E2 /* Address.swift in Sources */,
 				FA3BB2BD2008B46900E06F8F /* Locale+Extensions.swift in Sources */,
 				D79100182195AF56003ADB1A /* AlertIconCollection.swift in Sources */,
 			);

@@ -29,7 +29,6 @@ final class AlertIconCollection {
     
     private func createImage(alertType: ViewController.AlertType) -> UIImage? {
         switch alertType {
-        case .locationPicker: return createImage(string: "🗺")
         case .dataPicker: return createImage(string: "🗓")
         case .countryPicker: return createImage(string: "🇦🇶")
         case .currencyPicker: return createImage(string: "💶")
