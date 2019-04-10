@@ -65,6 +65,7 @@ final public class LocalePickerViewController: UIViewController {
         $0.searchBar.searchBarStyle = .minimal
         $0.searchBar.textField?.textColor = .black
         $0.searchBar.textField?.clearButtonMode = .whileEditing
+        $0.searchBar.backgroundColor = UIColor(hex: 0xf7f7f7)
         return $0
     }(UISearchController(searchResultsController: nil))
     
