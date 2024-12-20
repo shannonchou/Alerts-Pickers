@@ -21,6 +21,5 @@ Pod::Spec.new do |s|
   s.resource_bundles  = {
     'Countries' => 'Source/Pickers/Locale/Countries.bundle/**'
   }
-  s.resources = 'Example/Resources/*.xcassets'
 
 end
